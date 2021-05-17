@@ -16,7 +16,7 @@ $url09 = "https://uc977ccb7fbe3bfcfb4e3d77466a.previews.dropboxusercontent.com/p
 $url10 = "https://ucc506bf1e5eb0a91f33c791b520.previews.dropboxusercontent.com/p/thumb/AAxfZo1osVbCWtJVootu4TtR7jBphpwHUQEwJNh-lLzPmG6eTO1NnuTxL50uWHXR4XAncvePN35ufZx0LSsSVUzbIy1ndtGEYi_YQPHVt1ivZO3KeUUJV8YDpN2JOrwaK6fr9-6TdlkoZB82LYmQNlw-79ab0OVfXdE-bjjelrfUXeRF8BMVo7x2hA4s1t2kMxIMT_XYgFYS8dF5y-hqLZBSSgAPFV-N2t8ZyAHm9bXmFj693qym-lkHD2iPwBvO4wTndodRd4GL45DQd9Co-XcOMtfFLmcuU9N77g_5EiEAVtncasuEkkLl8_tIhbIm0djd5bgjYhqK6ENG7lo5JFada0j5IUzE80J1JRIPoPXko2zhZn1CrVq_B_lKicEHkeGUxmSLUXaM4VuRbysHFORQqu29jeUIqbUOVA3BINvExQ/p.jpeg?fv_content=true&size_mode=5"
 
 #Path for where file is being downloaded to
-$TeamsBackgounds = "$Env:USERPROFILE\AppData\Roaming\Microsoft\Teams\Backgrounds\Uploads"
+$TeamsBackgounds = "$Env:APPDATA\Microsoft\Teams\Backgrounds\Uploads"
 #$ZoomBackgrounds = ""
 
 #Where the real work happens. Ensure Output file extension is the same as website file extension!
