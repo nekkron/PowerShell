@@ -1,7 +1,7 @@
 ﻿# Variables
 $driverDownloadPath = "https://www.dropbox.com/s/tcd3v7c7x4kzsle/XeroxPhaser6600_6605_6.159.8.5_PCL6_x64.zip?dl=1"
-$portName = "IP_192.168.10.10"
-$portAddress = "192.168.10.10" # Printer IP
+$portName = "IP_169.254.100.1000"
+$portAddress = "169.254.100.100" # Printer IP
 $printerName = "Xerox WorkCentre 6605DN V4 PCL6" # This is the name the user will see when searching for printers
 $driverName = "Xerox WorkCentre 6605DN V4 PCL6" # Must be exact. Install driver on your computer and copy its name and paste here
 # Do not modify these variables
