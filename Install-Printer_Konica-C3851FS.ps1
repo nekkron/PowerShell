@@ -1,8 +1,8 @@
 ﻿# Variables
 $driverDownloadPath = "https://dl.konicaminolta.eu/en/?tx_kmanacondaimport_downloadproxy[fileId]=73a7023c221c5196187099a44491c2df&tx_kmanacondaimport_downloadproxy[documentId]=5674&tx_kmanacondaimport_downloadproxy[system]=KonicaMinolta&tx_kmanacondaimport_downloadproxy[language]=EN&type=1558521685"
-$portName = "IP_192.168.0.10" 
-$portAddress = "192.168.0.10" # Printer IP
-$printerName = "Europe Regional Office" # This is the name the user will see when searching for printers
+$portName = "IP_192.168.254.100" 
+$portAddress = "192.168.254.100" # Printer IP
+$printerName = "Printer Name" # This is the name the user will see when searching for printers
 $driverName = "KONICA MINOLTA C3851SeriesPCL" # Must be exact. Install driver on your computer and copy its name and paste here
 # Do not modify these variables
 $driverDownloaded = "C:\support\PrinterDriver.zip"
