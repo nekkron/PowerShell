@@ -1,7 +1,7 @@
 ﻿# Variables
 $driverDownloadPath = "https://dl.konicaminolta.eu/en/?tx_kmanacondaimport_downloadproxy[fileId]=8ac5b73cd33080c385004fa88f2e6533&tx_kmanacondaimport_downloadproxy[documentId]=123284&tx_kmanacondaimport_downloadproxy[system]=KonicaMinolta&tx_kmanacondaimport_downloadproxy[language]=EN&type=1558521685"
-$portName = "IP_192.168.10.10"
-$portAddress = "192.168.10.10" # Printer IP
+$portName = "IP_169.254.100.100"
+$portAddress = "169.254.100.100" # Printer IP
 $printerName = "KONICA MINOLTA C4050i PCL6" # This is the name the user will see when searching for printers
 $driverName = "KONICA MINOLTA C4050iSeriesPCL" # Must be exact. Install driver on your computer and copy its name and paste here
 # Do not modify these variables
