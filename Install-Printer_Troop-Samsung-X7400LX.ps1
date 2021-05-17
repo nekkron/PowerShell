@@ -2,7 +2,7 @@
 $driverDownloadPath = "https://www.dropbox.com/s/w5g8dczuj5jbahj/Printer.zip?dl=1"
 $portAddress = Read-Host "Please type in your printer's IP address?"
 $portName = "IP_$portAddress" 
-#$portAddress = "192.168.10.10" # Printer IP
+#$portAddress = "169.254.100.100" # Printer IP
 $printerName = "Troop Printer" # This is the name the user will see when searching for printers
 $driverName = "Samsung X7600 Series" # Must be exact. Install driver on your computer and copy its name and paste here
 # Do not modify these variables
