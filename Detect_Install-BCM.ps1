@@ -1,0 +1,23 @@
+﻿#=============================================================================================================================
+#
+# Script Name:     Detect_Install-BCM.ps1
+# Description:     Script detects if the executable for BMC Client Management Agent is installed on the device after performing uninstallation
+# Notes:           No variable substitution should be necessary
+#
+#=============================================================================================================================
+
+# Define Variables
+$curSvcStat,$svcCTRSvc,$errMsg = "","",""
+
+# Main script
+   
+   
+If (Test-Path -Path 'C:\Program Files\BMC Software\Client Management\Client\bin\mtxagent.exe'){
+    Write-Host "BMC Client Management Agent is installed."
+	exit 0   
+} Else {
+    If (-not (Test-Path -Path 'C:\Program Files\BMC Software\Client Management\Client\bin\mtxagent.exe')){
+    Write-Host "BMC Client Management Agent is NOT on this machine!"
+	exit 1
+    }
+}

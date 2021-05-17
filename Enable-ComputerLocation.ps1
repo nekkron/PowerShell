@@ -1,0 +1,1 @@
+﻿New-Item 'HKCU:\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location' -Force | New-ItemProperty -Name Value -Value Allow -Force | Out-Null
