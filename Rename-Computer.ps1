@@ -24,14 +24,17 @@ $NewCompName =$NewCompName.ToUpper()
 Rename-Computer -NewName "$NewCompName"
 
 if ($env:computerName.contains("EUR-")) {
-    Add-Computer -WorkgroupName USO-EUROPE 
+    Add-Computer -WorkgroupName WKGP-EUROPE
 }
 if ($env:computerName.contains("PAC-")) {
-    Add-Computer -WorkgroupName USO-PACIFIC 
+    Add-Computer -WorkgroupName WKGP-PACIFIC
 }
 if ($env:computerName.contains("SWA-")) {
-    Add-Computer -WorkgroupName USO-SWA 
+    Add-Computer -WorkgroupName WKGP-SWA
 }
 if ($env:computerName.contains("US-")) {
-    Add-Computer -WorkgroupName USO-STATES 
+    Add-Computer -WorkgroupName WKGP-USA
+}
+if ($env:computerName.contains("HQ-")) {
+    Add-Computer -WorkgroupName WKGP-HQ
 }
