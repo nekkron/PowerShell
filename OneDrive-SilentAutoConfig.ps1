@@ -3,7 +3,7 @@
 
 $HKLMregistryPath = 'HKLM:\SOFTWARE\Policies\Microsoft\OneDrive'##Path to HKLM keys
 $DiskSizeregistryPath = 'HKLM:\SOFTWARE\Policies\Microsoft\OneDrive\DiskSpaceCheckThresholdMB'##Path to max disk size key
-$TenantGUID = '1379e96c-4c4d-4dc0-9155-2ff2338aa406'
+$TenantGUID = '123456789-123456-123456-123456789'
 
 if(!(Test-Path $HKLMregistryPath)){New-Item -Path $HKLMregistryPath -Force}
 if(!(Test-Path $DiskSizeregistryPath)){New-Item -Path $DiskSizeregistryPath -Force}
