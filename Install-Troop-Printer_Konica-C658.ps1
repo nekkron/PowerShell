@@ -13,7 +13,7 @@ $rebootExists = "C:\Program Files (x86)\Shield\shdcmd.exe"
 
 # Disable Reboot Restore RX Pro
 if ( -not $rebootExists) {
-  "C:\Program Files (x86)\Shield\shdcmd.exe /protect disable /u Administrator /p 'U$O4tr00ps'"
+  "C:\Program Files (x86)\Shield\shdcmd.exe /protect disable /u Administrator /p 'password'"
   Start-Sleep -s 300
 }
 
