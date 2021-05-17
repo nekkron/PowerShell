@@ -2,8 +2,8 @@
 $driverDownloadPath = "https://dl.konicaminolta.eu/en/?tx_kmanacondaimport_downloadproxy[fileId]=8ac5b73cd33080c385004fa88f2e6533&tx_kmanacondaimport_downloadproxy[documentId]=123284&tx_kmanacondaimport_downloadproxy[system]=KonicaMinolta&tx_kmanacondaimport_downloadproxy[language]=EN&type=1558521685"
 $driverDownloaded = "C:\support\KM_C450i.zip"
 $extractPath = "C:\support\KM_C450i"
-$portName = "IP_192.168.10.10"
-$portAddress = "192.168.10.10"
+$portName = "IP_169.254.100.100"
+$portAddress = "169.254.100.100"
 $printerName = "Mayport Staff Printer"
 $driverName = "KONICA MINOLTA C650iSeriesPCL"
 $portExists = Get-Printerport -Name $portname -ErrorAction SilentlyContinue
