@@ -1,7 +1,7 @@
 ﻿# Variables
 $driverDownloadPath = "https://support.ricoh.com/bb/pub_e/dr_ut_e/0001311/0001311185/V1400/z92067L16.exe"
-$portName = "IP_192.168.10.11"
-$portAddress = "192.168.10.11" # Printer IP
+$portName = "IP_169.254.100.100"
+$portAddress = "169.254.100.100" # Printer IP
 $printerName = "Guest Printer" # This is the name the user will see when searching for printers
 $driverName = "Gestetner MP 305+ PCL 6" # Must be exact. Install driver on your computer and copy its name and paste here
 # Do not modify these variables
