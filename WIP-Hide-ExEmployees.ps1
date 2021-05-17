@@ -1,4 +1,4 @@
-﻿## NOT FUNCTIONAL AS OF 2 FEB 2021
+﻿## WORK IN PROGRESS
 
 # If AD user title contains "exemployee" or "ex employee" then change attribute msExchHideEmailFromGAL to TRUE
 
@@ -6,7 +6,7 @@
 Import-Module ActiveDirectory
 
 # Find users with "exemployee" or "ex employee" in the job title
-$Users = Get-ADUser -Filter { Description -like '*' } -SearchBase 'OU=Users,OU=HQ,DC=usoww,DC=local' -Properties title
+$Users = Get-ADUser -Filter { Description -like '*' } -SearchBase 'OU=Users,OU=spot,DC=domain,DC=tld' -Properties title
 
 foreach( $User in $Users ){
     try{
