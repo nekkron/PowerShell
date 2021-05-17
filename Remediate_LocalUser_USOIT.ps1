@@ -7,12 +7,11 @@
 #=============================================================================================================================
 
 # Variables
-$securePassword=ConvertTo-SecureString T3chn1c1@n! -AsPlainText -Force
-#$localUSOExists = Get-LocalUser -Name USOIT -ErrorAction SilentlyContinue
+$securePassword=ConvertTo-SecureString password -AsPlainText -Force
 
-# Reset password to USOIT account
-New-LocalUser -Name USOIT -Password $securePassword -AccountNeverExpires -Description "USO IT Administrator Account" -PasswordNeverExpires  -ErrorAction SilentlyContinue
-Set-LocalUser -Name USOIT -AccountNeverExpires -Description "USO IT Administrator Account" -Password $securePassword -PasswordNeverExpires $true
+# Reset password to admin account
+New-LocalUser -Name USOIT -Password $securePassword -AccountNeverExpires -Description "IT Administrator Account" -PasswordNeverExpires  -ErrorAction SilentlyContinue
+Set-LocalUser -Name USOIT -AccountNeverExpires -Description "IT Administrator Account" -Password $securePassword -PasswordNeverExpires $true
 
-# Add USOIT to administrators group
+# Add to administrators group
 Get-LocalGroupMember -Group Administrators -Member USOIT -ErrorAction SilentlyContinue
