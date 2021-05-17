@@ -5,19 +5,21 @@ $renamecomputer = $true
 if ($NewCompName -eq "" -or $NewCompName -eq $env:COMPUTERNAME) {$NewCompName = $env:COMPUTERNAME; $renamecomputer = $false}
 
 Write-Host "Please enter your desired location [1-4] [Default 1]:
-1. USA
-2. EUR
-3. PAC
-4. HQ"
+1. United States
+2. Europe
+3. Pacific
+4. Southwest Asia
+5. Headquarters
 $ou = Read-Host
 
 $validou = $false
-if ($ou -eq "" -or $ou -eq "1") {$ou = "OU=Computers,DC=USO,DC=org"; $validou =$true}
-if ($ou -eq "2") {$ou = "OU=Computers,DC=USO,DC=org"; $validou =$true}
-if ($ou -eq "3") {$ou = "OU=Computers,DC=USO,DC=org"; $validou =$true}
-if ($ou -eq "4") {$ou = "OU=Computers,DC=USO,DC=org"; $validou =$true}
+if ($ou -eq "" -or $ou -eq "1") {$ou = "OU=Computers,DC=domain,DC=tld"; $validou =$true}
+if ($ou -eq "2") {$ou = "OU=Computers,DC=domain,DC=tld"; $validou =$true}
+if ($ou -eq "3") {$ou = "OU=Computers,DC=domain,DC=tld"; $validou =$true}
+if ($ou -eq "4") {$ou = "OU=Computers,DC=domain,DC=tld"; $validou =$true}
+if ($ou -eq "5") {$ou = "OU=Computers,DC=domain,DC=tld"; $validou =$true}
 
-if($validou -eq $false) {Write-Host "Invalid input. Defaulting to 1"; $ou = "OU=Computers,DC=USO,DC=org"}
+if($validou -eq $false) {Write-Host "Invalid input. Defaulting to 1"; $ou = "OU=Computers,DC=domain,DC=tld"}
 
 $creds = New-Object System.Mangement.Automation.PSCredential("example\administrator",(ConvertTo-SecureString "Password" -AsPlainText -Force))
 
