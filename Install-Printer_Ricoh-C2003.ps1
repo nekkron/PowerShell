@@ -1,7 +1,7 @@
 ﻿# Variables
 $driverDownloadPath = "https://support.ricoh.com/bb/pub_e/dr_ut_e/0001318/0001318756/V11000/z90523L16.exe"
-$portName = "IP_192.168.10.10"
-$portAddress = "192.168.10.10" # Printer IP
+$portName = "IP_169.254.100.100"
+$portAddress = "169.254.100.100" # Printer IP
 $printerName = "RICOH MP C2003 PCL 6" # This is the name the user will see when searching for printers
 $driverName = "Gestetner MP C2003 PCL 6" # Must be exact. Install driver on your computer and copy its name and paste here
 # Do not modify these variables
