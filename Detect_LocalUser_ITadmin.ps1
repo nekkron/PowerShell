@@ -9,18 +9,18 @@
 # Variables
  $results = @()
  $localUSOExists = Get-LocalUser -Name USOIT -ErrorAction SilentlyContinue
- $passwordExpires = Get-WmiObject -Class Win32_UserAccount -Filter  "Name='USOIT'" | Select PasswordExpires
+ $passwordExpires = Get-WmiObject -Class Win32_UserAccount -Filter  "Name='IT Admin'" | Select PasswordExpires
  
  try
 {
      if (-not $localUSOExists) {
-      Write-Host "USOIT needs remediation"
+      Write-Host "IT Admin needs remediation"
       exit 1
     }
-    $results = @(Get-WmiObject -Class Win32_UserAccount -Filter  "Name='USOIT'" | Select PasswordExpires)
+    $results = @(Get-WmiObject -Class Win32_UserAccount -Filter  "Name='IT Admin'" | Select PasswordExpires)
         if (($results -like "*True*")){
         #Below necessary for Intune as of 10/2019 will only remediate Exit Code 1
-        Write-Host "USOIT needs remediation"
+        Write-Host "IT Admin needs remediation"
         exit 1
     }
     else{
