@@ -7,7 +7,7 @@
 #=============================================================================================================================
 
 # Variables
-$securePassword=ConvertTo-SecureString password1 -AsPlainText -Force
+$securePassword=ConvertTo-SecureString password123 -AsPlainText -Force
 
 # Reset password to admin account
 New-LocalUser -Name "IT Admin" -Password $securePassword -AccountNeverExpires -Description "IT Administrator Account" -PasswordNeverExpires  -ErrorAction SilentlyContinue
