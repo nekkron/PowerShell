@@ -8,8 +8,7 @@ Write-Host "Please enter your desired location [1-4] [Default 1]:
 1. United States
 2. Europe
 3. Pacific
-4. Southwest Asia
-5. Headquarters
+4. Headquarters
 $ou = Read-Host
 
 $validou = $false
@@ -17,7 +16,6 @@ if ($ou -eq "" -or $ou -eq "1") {$ou = "OU=Computers,DC=domain,DC=tld"; $validou
 if ($ou -eq "2") {$ou = "OU=Computers,DC=domain,DC=tld"; $validou =$true}
 if ($ou -eq "3") {$ou = "OU=Computers,DC=domain,DC=tld"; $validou =$true}
 if ($ou -eq "4") {$ou = "OU=Computers,DC=domain,DC=tld"; $validou =$true}
-if ($ou -eq "5") {$ou = "OU=Computers,DC=domain,DC=tld"; $validou =$true}
 
 if($validou -eq $false) {Write-Host "Invalid input. Defaulting to 1"; $ou = "OU=Computers,DC=domain,DC=tld"}
 
