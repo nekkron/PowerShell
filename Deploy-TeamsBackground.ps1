@@ -1,9 +1,7 @@
 ﻿#The purpose of this script is to download an image, or series of images, from the Internet and install them into the Teams Backgrounds folder for the signed-in user.
-#  20200423 - James Kasparek - Senior Regional IT Support Technician
-#
 
 #Image location on the Internet. Ensure file extension matches the deployed extension!
-#$url00 = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+$url00 = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
 $url01 = "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
 $url02 = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Microsoft_logo_%282012%29_modified.svg/2560px-Microsoft_logo_%282012%29_modified.svg.png"
 $url03 = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Vmware.svg/1200px-Vmware.svg.png"
@@ -17,10 +15,10 @@ $url10 = "http://wiki.innovaphone.com/img_auth.php/a/a1/Yealink_Logo.png"
 
 #Path for where file is being downloaded to
 $TeamsBackgounds = "$Env:APPDATA\Microsoft\Teams\Backgrounds\Uploads"
-#$ZoomBackgrounds = ""
+$ZoomBackgrounds = "$Env:APPDATA\Zoom\data\VirtualBkgnd_Custom"
 
 #Where the real work happens. Ensure Output file extension is the same as website file extension!
-#Invoke-WebRequest $url00 -OutFile $TeamsBackgounds\file00.png
+Invoke-WebRequest $url00 -OutFile $TeamsBackgounds\file00.png
 Invoke-WebRequest $url01 -OutFile $TeamsBackgounds\file01.jpg
 Invoke-WebRequest $url02 -OutFile $TeamsBackgounds\file02.jpg
 Invoke-WebRequest $url03 -OutFile $TeamsBackgounds\file03.jpg
