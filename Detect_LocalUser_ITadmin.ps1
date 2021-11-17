@@ -1,7 +1,7 @@
 ﻿#=============================================================================================================================
 #
-# Script Name:     Detect-LocalUser_USOIT.ps1
-# Description:     Detect if USOIT account exists and if the password must be changed at next logon. Remediate-LocalUser_USOIT.ps1 resolves the issue, if detected
+# Script Name:     Detect-LocalUser_ITadmin.ps1
+# Description:     Detect if USOIT account exists and if the password must be changed at next logon. Remediate-LocalUser_ITadmin.ps1 resolves the issue, if detected
 # Notes:           Don't change the variables!
 #
 #=============================================================================================================================
