@@ -25,7 +25,7 @@
     }
     else{
         #No matching certificates, do not remediate
-        Write-Host "No issues with USOIT account"        
+        Write-Host "No issues with IT Admin account"        
         exit 0
     }   
 }
