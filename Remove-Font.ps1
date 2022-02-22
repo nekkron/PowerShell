@@ -1,3 +1,4 @@
+# https://scloud.work/en/schriftarten-mit-intune-installieren/
 $PackageName = "Company-Fonts"
 
 $Path_4netIntune = "$Env:Programfiles\4net\EndpointManager"
