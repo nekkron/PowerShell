@@ -1,3 +1,4 @@
+# https://scloud.work/en/schriftarten-mit-intune-installieren/
 $PackageName = "Company-Fonts"
 $Version = "1"
 $ProgramVersion_current = Get-Content -Path "$Env:Programfiles\4net\EndpointManager\Validation\$PackageName"
