@@ -4,12 +4,11 @@
 	 Created with: 	Windows PowerShell ISE x64
 	 Created on:   	2022-06-20
 	 Created by:   	James Kasparek
-	 Organization: 	United Service Organizations
 	 Filename:     	Install-Office2019.ps1
-     URL:           n/a
+    	 URL:           https://github.com/nekkron/PowerShell/blob/main/Install-Office2019.ps1
 	===========================================================================
 	.DESCRIPTION
-		Downloads Office Deployment Tool & configuration from dropbox, then downloads Office 2019 Standard from the Microsoft CDN.
+		Downloads Office Deployment Tool & configuration from dropbox, then downloads Office 2019 Standard from the Microsoft CDN, if not on an attached USB.
 #>
 
 # Variables
