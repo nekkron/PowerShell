@@ -9,8 +9,8 @@
          URL:           https://github.com/nekkron/PowerShell/blob/main/Configure-DellCommandUpdate.ps1
 	===========================================================================
 	.DESCRIPTION
-		Automatically configures Dell Command Update, scans for updates and applies updates without a reboot
-		Dell Command Update | Command Line Interface error codes: https://www.dell.com/support/manuals/en-us/command-update/dellcommandupdate_rg/command-line-interface-error-codes?guid=guid-fbb96b06-4603-423a-baec-cbf5963d8948&lang=en-us
+	   Automatically configures Dell Command Update, scans for updates and applies updates without a reboot
+	   Dell Command Update | Command Line Interface error codes: https://www.dell.com/support/manuals/en-us/command-update/dellcommandupdate_rg/command-line-interface-error-codes?guid=guid-fbb96b06-4603-423a-baec-cbf5963d8948&lang=en-us
 #>
 
 # Variables
