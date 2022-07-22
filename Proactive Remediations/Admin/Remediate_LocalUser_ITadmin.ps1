@@ -2,7 +2,7 @@
 #
 # Script Name:     Remediate-LocalUser_ITadmin.ps1
 # Description:     Remediates USOIT account issue if detected in Detect-LocalUser_ITadmin.ps1
-# Notes:           Changing the variable $securePassword changes the password of the USOIT account
+# Notes:           Changing the variable $securePassword changes the password of the IT Admin account
 #
 #=============================================================================================================================
 
