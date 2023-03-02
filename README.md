@@ -5,3 +5,6 @@ This is a list of PowerShell scripts I've written or modified or frequently used
 Please feel free to borrow these scripts. If there's a better, easier or faster way to do things please let me know.
 
 Thank you, and enjoy.
+
+All scripts are provided "AS IS" with no warranty or liability.
+Always test before production.
