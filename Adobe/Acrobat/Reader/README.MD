@@ -10,7 +10,7 @@
 
 ###
 
-<p align="left">1. Creates log file for installation process<br>2. Installs WinGet and all dependencies<br>3. Installs Adobe Acrobat Reader DC (64-bit)<br>3a. Verbose install log<br>3b. Accepts EULA for the device<br>4. Backs up existing registry<br>5. Downloads & injects custom registry keys<br>6. Allows for easy updating using winget</p>
+<p align="left">1. Creates log file for installation process<br>2. Installs WinGet and all dependencies<br>3. Installs Adobe Acrobat Reader DC (64-bit)<br>_a. Verbose install log<br>_b. Accepts EULA for the device<br>4. Backs up existing registry<br>5. Downloads & injects custom registry keys<br>6. Allows for easy updating using winget</p>
 
 ###
 
