@@ -27,8 +27,8 @@
 
 <p align="left">Simplest way to close Acrobat and delete these registry keys:</p>
 
- - [HKEY_LOCAL_MACHINE\SOFTWARE\Adobe]<br> 
- - [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe]<br>
+ - [HKEY_LOCAL_MACHINE\SOFTWARE\Adobe]
+ - [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe]
  - [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adobe]
 
 <p align="left">
