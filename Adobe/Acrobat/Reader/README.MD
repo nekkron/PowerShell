@@ -1,4 +1,5 @@
-<h1 align="left">Adobe Acrobat Reader DC</h1>
+
+<h1 align="left">Adobe Acrobat Reader DC for Public Computers</h1>
 
 ###
 
@@ -10,15 +11,30 @@
 
 ###
 
-<p align="left">1. Creates log file for installation process<br>2. Installs WinGet and all dependencies<br>3. Installs Adobe Acrobat Reader DC (64-bit)<br>_a. Verbose install log<br>_b. Accepts EULA for the device<br>4. Backs up existing registry<br>5. Downloads & injects custom registry keys<br>6. Allows for easy updating using winget</p>
+<p align="left">
+
+ 1. Creates log file for script process
+ 2. Downloads specified version from Adobe & custom .mst & .ini
+ 3. Installs Adobe Acrobat Reader DC (64-bit) with verbose logging
+
+</p>
 
 ###
 
-<h2 align="left">I need to roll back changes to the registry!</h2>
+<h2 align="left">I don't want the lockdown features anymore!</h2>
 
 ###
 
-<p align="left">Simplest way to do this is to delete this key and all keys below.<br>[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe]<br><br>The next time Adobe Acrobat Reader DC is opened, the default keys will be automatically generated.</p>
+<p align="left">Simplest way to close Acrobat and delete these registry keys:</p>
+
+ - [HKEY_LOCAL_MACHINE\SOFTWARE\Adobe]<br> 
+ - [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe]<br>
+ - [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adobe]
+
+<p align="left">
+The next time Adobe Acrobat Reader DC is opened, the default keys will be automatically generated.
+
+</p>
 
 ###
 
