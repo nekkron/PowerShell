@@ -16,7 +16,7 @@
     - https://www.thewindowsclub.com/allow-standard-users-to-run-a-program-with-admin-rights
 #>
 
-Start-Transcript -Path "$env:ProgramData\Microsoft\IntuneManagementExtension\Logs\Run-ViPlex-As-Admin.log"
+Start-Transcript -Path "$env:ProgramData\Microsoft\IntuneManagementExtension\Logs\Run-App-As-Admin.log"
 # Variables - User Account
 $localUser = "AppUser"
 $localDescription = "Local Admin account for App"

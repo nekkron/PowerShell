@@ -14,10 +14,10 @@ TASKKILL /IM WINWORD.EXE
 TASKKILL /IM POWERPNT.EXE
 TASKKILL /IM OUTLOOK.EXE
 TASKKILL /IM EXCEL.EXE
-Remove-Item C:\Users\USOTROOP\Desktop\* -Recurse -Force
-Remove-Item C:\Users\USOTROOP\Documents\* -Recurse -Force
-Remove-Item C:\Users\USOTROOP\Downloads\* -Recurse -Force
-Remove-Item C:\Users\USOTROOP\Pictures\* -Recurse -Force
+Remove-Item C:\Users\USERNAME\Desktop\* -Recurse -Force
+Remove-Item C:\Users\USERNAME\Documents\* -Recurse -Force
+Remove-Item C:\Users\USERNAME\Downloads\* -Recurse -Force
+Remove-Item C:\Users\USERNAME\Pictures\* -Recurse -Force
 
 cleanmgr.exe /VERYLOWDISK
 cleanmgr.exe /AUTOCLEAN
