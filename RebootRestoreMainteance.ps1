@@ -31,7 +31,7 @@ Write-Warning "Dell Command Update is not installed!"
 }
 
 # check to see if module is already installed, if not, install, otherwise, execute
-IF (!(PSWIndowsUpdate exists) {
+IF (!(PSWIndowsUpdate exists)) {
 Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
 Install-Module -Name PSWindowsUpdate -Force
 }
