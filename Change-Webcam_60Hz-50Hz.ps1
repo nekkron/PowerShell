@@ -1,10 +1,6 @@
 <#
-    ===========================================================================
-	 Created on:   	2025/02/09
-	 Created by:   	James Kasparek
-	 Filename:     	Change-Webcam_60Hz-50Hz.ps1
-     URL:           https://github.com/nekkron/PowerShell/
-	===========================================================================
+.AUTHOR
+    James Kasparek (https://github.com/nekkron/PowerShell/)
 
 .DESCRIPTION
     This script will modify the PowerFrequency key of USB webcams to 50Hz
@@ -19,6 +15,7 @@
     https://microsoftteams.uservoice.com/forums/555103-public/suggestions/35661376-allow-selection-of-camera-flicker-frequency-betwee
     https://devblogs.microsoft.com/scripting/update-or-add-registry-key-value-with-powershell/
 #>
+
 Start-Transcript -Path "$env:TEMP\Change-WebcamFrequency_60Hz-50Hz.log" -Append
 $webcams = (Get-CimInstance Win32_PnPEntity | Where-Object caption -Match "web cam").pnpDeviceID
 $registryPath = "HKLM:\SYSTEM\CurrentControlSet\Enum"
