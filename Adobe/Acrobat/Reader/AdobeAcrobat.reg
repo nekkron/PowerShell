@@ -12,6 +12,9 @@ Windows Registry Editor Version 5.00
 "bAcroSuppressUpsell"=dword:00000001
 "bUpdater"=dword:00000000
 "bSuppressSignOut"=dword:00000001
+"bWhatsNewExp"=dword:00000001
+"bToggleFTE"=dword:00000001
+"bDisableThumbnailPreviewHandler"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown\cCloud]
 "bEnableAcrobatHS"=dword:00000001
@@ -28,6 +31,8 @@ Windows Registry Editor Version 5.00
 "bTogglePrefsSync"=dword:00000001
 "bToggleWebConnectors"=dword:00000001
 "bToggleSendAndTrack"=dword:00000001
+"bToggleNotifications"=dword:00000001
+
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown\cSharePoint]
 "bDisableSharePointFeatures"=dword:00000001
@@ -36,7 +41,7 @@ Windows Registry Editor Version 5.00
 "bDisableWebmail"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown\cWelcomeScreen]
-"bShowWelcomeScreen"=dword:00000001
+"bShowWelcomeScreen"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Acrobat]
 
@@ -84,3 +89,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown\cWebmailProfiles]
 "bDisableWebmail"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown]
+"ENABLE_CHROMEEXT"=dword:00000001
