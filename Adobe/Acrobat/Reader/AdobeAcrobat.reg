@@ -7,18 +7,19 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Acrobat Reader\DC]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown]
-"bEnableFlash"=dword:00000000
-"bDisableJavaScript"=dword:00000001
 "bAcroSuppressUpsell"=dword:00000001
-"bUpdater"=dword:00000000
-"bSuppressSignOut"=dword:00000001
-"bWhatsNewExp"=dword:00000001
-"bToggleFTE"=dword:00000001
+"bDisableJavaScript"=dword:00000001
 "bDisableThumbnailPreviewHandler"=dword:00000001
+"bEnableFlash"=dword:00000000
+"bSuppressSignOut"=dword:00000001
+"bToggleFTE"=dword:00000001
+"bUpdater"=dword:00000000
+"bWhatsNewExp"=dword:00000000
+"ENABLE_CHROMEEXT"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown\cCloud]
-"bEnableAcrobatHS"=dword:00000001
 "bDisableADCFileSTore"=dword:00000001
+"bEnableAcrobatHS"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown\cIPM]
 "bDontShowMsgWhenViewingDoc"=dword:00000000
@@ -26,13 +27,12 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown\cServices]
 "bToggleAdobeDocumentServices"=dword:00000001
+"bToggleNotifications"=dword:00000001
+"bTogglePrefsSync"=dword:00000001
+"bToggleSendAndTrack"=dword:00000001
+"bToggleWebConnectors"=dword:00000001
 "bUpdater"=dword:00000000
 "bUsageMeasurement"=dword:00000000
-"bTogglePrefsSync"=dword:00000001
-"bToggleWebConnectors"=dword:00000001
-"bToggleSendAndTrack"=dword:00000001
-"bToggleNotifications"=dword:00000001
-
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Acrobat Reader\DC\FeatureLockdown\cSharePoint]
 "bDisableSharePointFeatures"=dword:00000001
@@ -78,6 +78,9 @@ Windows Registry Editor Version 5.00
 "tSponsoredContentSchemeWhiteList"="http|https"
 "tFlashContentSchemeWhiteList"="http|https|ftp|rtmp|rtmpe|rtmpt|rtmpte|rtmps|mailto"
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown\cIPM]
+"bShowMsgAtLaunch"=dword:00000000
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown\cSecurity]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown\cSecurity\cDigSig]
@@ -87,14 +90,11 @@ Windows Registry Editor Version 5.00
 "bAllowAPSConfig"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown\cServices]
-"bUpdater"=dword:00000000
 "bToggleWebConnectors"=dword:00000001
+"bUpdater"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown\cSharePoint]
 "bDisableSharePointFeatures"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown\cWebmailProfiles]
 "bDisableWebmail"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Policies\Adobe\Acrobat Reader\DC\FeatureLockDown]
-"ENABLE_CHROMEEXT"=dword:00000001
